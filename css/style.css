@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: rgb(77, 78, 77);
+    background-color: rgb(231, 229, 229);
     /* background-color: rgb(255, 255, 255); */
 }
 
@@ -18,11 +18,11 @@ body {
 }
 
 nav {
-    position: relative;
+    position: absolute;
+    top: 0;
     width: 100vw;
     height: 2.5rem;
-
-
+    z-index: 10;
 }
 
 .logo {
@@ -51,6 +51,7 @@ li {
     cursor: pointer;
     font-family: 'Montserrat';
     padding: 0.3rem 2rem;
+    font-weight: bold;
 }
 
 
@@ -72,4 +73,26 @@ li:hover {
     font-size: 25px;
     color: black;
     cursor: initial;
+    background-color:transparent;
+}
+
+.header {
+    position: relative;
+    background-color: rgb(214, 212, 212);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    position: absolute;
+    top: 12rem;
+    padding-left: 15rem;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 50px;
+}
+
+video {
+    height: 95vh;
 }
