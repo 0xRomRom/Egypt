@@ -301,13 +301,81 @@ video {
     height: 22.5rem;
     margin-bottom: 2rem;
     border-radius: 0.7rem;
+    display: flex;
+}
+
+.tour-img-cont {
+    position: relative;
+    /* left: 40px; */
+    padding-left: 40px;
+    height: 100%;
+    width: 22rem;
+    z-index: 30;
 }
 
 .tour-img {
     position: relative;
-    left: 4%;
     top: 12.5%;
     height: 75%;
+    width: 100%;
     border-radius: 0.3rem;
-    
+    display: flex;
+}
+
+.tour-text-cont {
+    position: relative;
+    height: 100%;
+    flex: 1;
+    padding-left: 1.5rem;
+    padding-right: 1.75rem;
+    padding-top: 2.3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 16px;
+}
+
+.tours-title {
+    font-family: 'Montserrat';
+    color: white;
+    position: relative;
+    border-bottom: 3px solid gold;
+    font-size: 35px;
+}
+
+.tours-description {
+    position:relative;
+    color: white;
+    max-width: 40rem;
+    /* background-color: green; */
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+    font-weight: 800;
+}
+
+.contact-us {
+    position: relative;
+    font-family: 'Montserrat';
+    margin: auto 0;
+    padding: 1rem 0.5rem;
+    height: 2rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    background-color: transparent;
+    border: 2px solid black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-us:hover .fa-arrow-right {
+ color: gold;
+ transition: all 0.3s ease-in-out;
+ transform: translateX(0.2rem);
 }
