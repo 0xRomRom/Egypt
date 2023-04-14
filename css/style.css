@@ -408,3 +408,72 @@ border: 2px solid transparent;
 color: black;
 background-color: white;
 }
+
+.footer {
+    position: relative;
+    width: 100vw;
+    height: 30rem;
+}
+
+.footer-brand-box {
+    position: absolute;
+    width: 100%;
+    height: 17.5rem;
+    top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-center-box {
+    position: relative;
+    width: 40rem;
+    height: 100%;
+}
+
+.footer-top-row {
+    position: relative;
+    width: 100%;
+    height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Montserrat";
+  gap: 2rem;
+}
+
+.footer-logo {
+    height: 100%;
+}
+
+.footer-company-name {
+    border-bottom: 2px solid gold;
+}
+
+.footer-address-row {
+    position: relative;
+    width: 100%;
+    height: 80%;
+}
+
+.address-box {
+    position: relative;
+    height: 80%;
+    top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.address-item {
+    /* background-color: gray; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 12rem;
+    gap: 2rem;
+    font-size: 1.75rem;
+    color: white;
+    font-family: "Montserrat";
+}
