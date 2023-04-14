@@ -122,3 +122,6 @@ const openModal = document.querySelector('.plaats-review-cta');
 openModal.addEventListener('click', () => {
   reviewModal.classList.remove('hidden');
 });
+
+
+//Submit modal
