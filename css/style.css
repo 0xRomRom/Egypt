@@ -5,6 +5,26 @@
     scroll-behavior: smooth;
 }
 
+/* For WebKit-based browsers (e.g. Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #000000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #808080;
+  }
+  
+  /* For Firefox */
+  ::-moz-scrollbar {
+    width: 10px;
+    background-color: #000000;
+  }
+  
+  ::-moz-scrollbar-thumb {
+    background-color: #808080;
+  }
+
 body {
     background-color: #080b16;
     /* background-color: rgb(255, 255, 255); */
@@ -104,7 +124,7 @@ video {
     width: 100%;
     padding: 0rem 1rem 0rem 0.5rem;
     display: flex;
-    color: white
+    color: white;
 }
 
 .review-bar {
@@ -128,7 +148,7 @@ video {
 .tours-box {
     position: relative;
     width: 100%;
-    height: 70rem;
+    max-height: 70rem;
     /* border: 1px solid beige; */
 }
 
@@ -141,6 +161,7 @@ video {
     /* border: 2px solid black; */
     box-shadow: 0px 0px 5px rgb(255, 255, 255);
     border-radius: 0.5rem;
+    overflow-y: scroll;
 }
 
 .review-hero {
@@ -154,6 +175,7 @@ video {
     font-family: 'Montserrat';
     text-align: center;
     padding-top: 0.4rem;
+    padding-bottom: 1.6rem;
     font-size: 30px;
 }
 
@@ -251,4 +273,41 @@ video {
 .review-copy {
     font-family: 'Montserrat';
     font-size: 12px;
+}
+
+.tours-scroll-box {
+    position: relative;
+    padding: 0rem 1rem;
+    width: 100%;
+    /* border: 1px solid red; */
+  
+}
+
+
+.grad1 {
+    background:linear-gradient(120deg, blue, purple);
+}
+
+.grad2 {
+    background:linear-gradient(120deg, rgb(60, 110, 175), rgb(139, 21, 139));
+}
+.grad3 {
+    background:linear-gradient(120deg, rgb(95, 145, 80), rgb(16, 71, 153));
+}
+
+.tour-item {
+    position: relative;
+    width: 100%;
+    height: 22.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.7rem;
+}
+
+.tour-img {
+    position: relative;
+    left: 4%;
+    top: 12.5%;
+    height: 75%;
+    border-radius: 0.3rem;
+    
 }
