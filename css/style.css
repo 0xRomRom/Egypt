@@ -132,6 +132,7 @@ video {
     min-width: 17rem;
     max-width: 17rem;
     height: 70rem;
+    overflow: hidden;
 }
 
 .review-inner {
@@ -140,9 +141,10 @@ video {
     left: 1%;
     height: 98%;
     top: 1%;
-    /* border: 2px solid rgb(255, 255, 255); */
+    border: 2px solid rgb(255, 255, 255);
     box-shadow: 0px 0px 5px rgb(255, 255, 255);
     border-radius: 0.5rem;
+    overflow: hidden;
 }
 
 .tours-box {
@@ -181,11 +183,13 @@ video {
 
 .review-scroll-box {
     position: relative;
-    width: 95%;
-    left: 2.5%;
+    width: 102.5%;
+    left: 1.5%;
     margin-top: 0.75rem;
     height: 60rem;
     /* border: 1px solid red; */
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .review {
@@ -267,12 +271,12 @@ video {
 .reviewer-copy {
     position: relative;
     width: 100%;
-    /* background-color: red; */
 }
 
 .review-copy {
     font-family: 'Montserrat';
     font-size: 12px;
+    height: 100%;
 }
 
 .tours-scroll-box {
@@ -280,7 +284,6 @@ video {
     padding: 0rem 1rem;
     width: 100%;
     /* border: 1px solid red; */
-  
 }
 
 
@@ -358,7 +361,6 @@ video {
 .contact-us {
     position: relative;
     font-family: 'Montserrat';
-    margin: auto 0;
     padding: 1rem 0.5rem;
     height: 2rem;
     margin-right: 1rem;
@@ -373,9 +375,36 @@ video {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
+.contact-us:hover {
+background-color: black;
+}
 
 .contact-us:hover .fa-arrow-right {
  color: gold;
  transition: all 0.3s ease-in-out;
  transform: translateX(0.2rem);
+}
+
+.plaats-review-cta {
+    position: relative;
+   width: 60%;
+   margin-top: 1.5rem;
+   left: 20%;
+   height: 2rem;
+   border-radius: 0.3rem;
+   background-color: black;
+   color: white;
+   border: 2px solid white;
+   font-family: "Montserrat";
+   font-weight: 800;
+   cursor: pointer;
+   transition: all 0.2s ease-in-out;
+}
+
+.plaats-review-cta:hover {
+
+
+border: 2px solid transparent;
+color: black;
+background-color: white;
 }
