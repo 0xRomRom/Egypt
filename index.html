@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cleopatra Tours</title>
     <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/responsive.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat"
       rel="stylesheet"
@@ -22,9 +23,9 @@
         <img src="./img/Logo.avif" alt="Tours logo" class="logo" />
         <ul class="nav-list">
           <li class="hyro">𓀀𓁐𓏥𓃀𓈖𓌱𓅓𓎛𓅱</li>
-          <li>Reviews</li>
-          <li>Tours</li>
-          <li>Contact</li>
+          <a href="#reviews"><li>Reviews</li></a>
+          <a href="#tours"><li>Tours</li></a>
+          <a href="#footer"><li>Contact</li></a>
           <li class="hyro">𓀔𓈖𓌱𓅓𓎛𓇋𓇋𓏏𓁐𓐍</li>
         </ul>
       </nav>
@@ -34,8 +35,8 @@
           <source src="./img/header-video.mp4" />
         </video>
       </div>
-      <div class="main-content">
-        <div class="review-bar">
+      <div class="main-content hidden">
+        <div class="review-bar" id="reviews">
           <div class="review-inner">
             <h2 class="review-hero">Reviews</h2>
             <div class="review-scroll-box">
@@ -214,7 +215,7 @@
             <button class="plaats-review-cta">Review Plaatsen</button>
           </div>
         </div>
-        <div class="tours-box">
+        <div class="tours-box" id="tours">
           <div class="tours-inner">
             <h2 class="tours-hero">Trips</h2>
             <div class="tours-scroll-box">
@@ -391,7 +392,7 @@
         </div>
         </div>
     </div>
-    <div class="footer">
+    <div class="footer" id="footer">
         <div class="footer-brand-box">
             <div class="footer-center-box">
                 <div class="footer-top-row">

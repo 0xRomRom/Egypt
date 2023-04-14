@@ -1,0 +1,26 @@
+@media (max-width: 823px) {
+    .hyro  {
+        display: none;
+    }
+
+    h1 {
+        font-size: 65px;
+        padding-left: 18rem;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 45px;
+        padding-left: 10rem;
+    }
+
+    a {
+        padding: 0.3rem 1rem;
+    }
+
+    video {
+        height: 80vh;
+    }
+}
+
