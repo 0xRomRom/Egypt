@@ -124,7 +124,10 @@ openModal.addEventListener("click", () => {
 });
 
 let reviewResult = {
-  hello: "Hello World"
+  name: "",
+  date: "",
+  story: "",
+  stars: 0,
 };
 
 //Submit modal
@@ -141,4 +144,32 @@ const submitReview = async () => {
     }
   );
 };
-submitReview();
+
+
+
+const submitForm = document.querySelector('.submit-form');
+submitForm.addEventListener("click", () => {
+
+  const nameInput = document.querySelector(".name-input").value; // Replace with the actual ID of your name input field
+  const textareaInput = document.querySelector(".story-input").value; // Replace with the actual ID of your textarea input field
+  const dateInput = document.querySelector(".date-input").value; // Replace with the actual ID of your textarea input field
+  console.log(dateInput);
+
+  const nameRegex = /^[a-zA-Z\- ]{2,50}$/;
+  const textareaRegex = /^[\s\S]{1,400}$/;
+
+  const isNameValid = nameRegex.test(nameInput);
+  const isTextareaValid = textareaRegex.test(textareaInput);
+
+  if (!isNameValid || !isTextareaValid || starRating === 0) {
+    alert("Complete form before submission");
+    return;
+  } 
+
+  reviewResult.name = nameInput;
+  reviewResult.date = dateInput;
+  reviewResult.story = textareaInput;
+  reviewResult.stars = starRating;
+
+  submitReview();
+});
