@@ -107,3 +107,18 @@ rateDarkStars.addEventListener("click", (e) => {
     darkStar5.classList.remove("hidden");
   }
 });
+
+//Close review modal
+const reviewModal = document.querySelector('.review-modal');
+const closeModal = document.querySelector('.close-modal');
+
+closeModal.addEventListener('click', () => {
+  reviewModal.classList.add('hidden');
+});
+
+//Open review modal
+const openModal = document.querySelector('.plaats-review-cta');
+
+openModal.addEventListener('click', () => {
+  reviewModal.classList.remove('hidden');
+});

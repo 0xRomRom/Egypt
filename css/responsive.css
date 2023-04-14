@@ -151,6 +151,12 @@
 }
 
 
+@media (max-width: 500px) {
+  .close-modal {
+   left:90%;
+}
+}
+
 @media (max-width: 400px) {
   h1 {
     padding-left: 7rem;
