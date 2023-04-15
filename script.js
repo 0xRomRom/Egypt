@@ -145,15 +145,15 @@ const submitReview = async () => {
   );
 };
 
+let submitted = false;
 
-
-const submitForm = document.querySelector('.submit-form');
+const submitForm = document.querySelector(".submit-form");
 submitForm.addEventListener("click", () => {
-
   const nameInput = document.querySelector(".name-input").value; // Replace with the actual ID of your name input field
   const textareaInput = document.querySelector(".story-input").value; // Replace with the actual ID of your textarea input field
   const dateInput = document.querySelector(".date-input").value; // Replace with the actual ID of your textarea input field
-  console.log(dateInput);
+  const inputModal = document.querySelector(".review-center-modal"); // Replace with the actual ID of your textarea input field
+  const submitConnfirmedText = document.querySelector(".submit-confirmed"); // Replace with the actual ID of your textarea input field
 
   const nameRegex = /^[a-zA-Z\- ]{2,50}$/;
   const textareaRegex = /^[\s\S]{1,400}$/;
@@ -161,15 +161,29 @@ submitForm.addEventListener("click", () => {
   const isNameValid = nameRegex.test(nameInput);
   const isTextareaValid = textareaRegex.test(textareaInput);
 
-  if (!isNameValid || !isTextareaValid || starRating === 0) {
+  if (
+    !isNameValid ||
+    !isTextareaValid ||
+    starRating === 0 ||
+    dateInput === ""
+  ) {
     alert("Complete form before submission");
     return;
-  } 
+  }
 
   reviewResult.name = nameInput;
   reviewResult.date = dateInput;
   reviewResult.story = textareaInput;
   reviewResult.stars = starRating;
+  inputModal.classList.add("hidden");
+  submitConnfirmedText.classList.remove("hidden");
+
+  setTimeout(() => {
+    reviewModal.classList.add("hidden");
+    submitted = true;
+    openModal.disabled = true;
+    openModal.textContent = "Already Reviewed";
+  }, 4000);
 
   submitReview();
 });

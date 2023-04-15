@@ -666,16 +666,23 @@ video {
 }
 
 .close-modal {
-    position: absolute;
-    left: 28.3rem;
-    top: 0.3rem;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border: 1px solid transparent;
+  position: absolute;
+  left: 28.3rem;
+  top: 0.3rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
 }
 
 .close-modal:hover {
-color: white;
-border: 1px solid black;
-border-radius: 0.3rem;
+  color: white;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+}
+
+.submit-confirmed {
+  font-family: "Montserrat";
+  color: white;
+  font-size: 3vw;
+  border-bottom: 1px solid gold;
 }

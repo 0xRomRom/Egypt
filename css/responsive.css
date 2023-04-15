@@ -79,7 +79,7 @@
   .plaats-review-cta {
     width: 30%;
     left: 35%;
-   }
+  }
 }
 
 @media (max-width: 650px) {
@@ -90,6 +90,10 @@
   .footer-center-box {
     margin-right: 7rem;
     transform: scale(0.8);
+  }
+
+  .submit-confirmed {
+    font-size: 4vw;
   }
 }
 
@@ -125,10 +129,10 @@
   }
 
   .plaats-review-cta {
-   width: 10rem;
-   margin: 0 auto;
-   left: 30%;
-   }
+    width: 10rem;
+    margin: 0 auto;
+    left: 30%;
+  }
 
   .tour-img-cont {
     padding: 0;
@@ -147,14 +151,12 @@
   .tour-text-cont {
     top: 1rem;
   }
-
 }
-
 
 @media (max-width: 500px) {
   .close-modal {
-   left:90%;
-}
+    left: 90%;
+  }
 }
 
 @media (max-width: 400px) {
