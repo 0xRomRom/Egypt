@@ -187,3 +187,111 @@ submitForm.addEventListener("click", () => {
 
   submitReview();
 });
+
+let starsArray = [
+  `<img
+src="./img/star.png"
+class="star-icon"
+alt="Star icon"
+/>`,
+  `<img
+src="./img/star.png"
+class="star-icon"
+alt="Star icon"
+/> <img
+src="./img/star.png"
+class="star-icon"
+alt="Star icon"
+/>`,
+  `<img
+src="./img/star.png"
+class="star-icon"
+alt="Star icon"
+/> <img
+src="./img/star.png"
+class="star-icon"
+alt="Star icon"
+/> <img
+src="./img/star.png"
+class="star-icon"
+alt="Star icon"
+/>`,
+  `<img
+src="./img/star.png"
+class="star-icon"
+alt="Star icon"
+/> <img
+src="./img/star.png"
+class="star-icon"
+alt="Star icon"
+/> <img
+src="./img/star.png"
+class="star-icon"
+alt="Star icon"
+/> <img
+src="./img/star.png"
+class="star-icon"
+alt="Star icon"
+/>`,
+  `<img
+src="./img/star.png"
+class="star-icon"
+alt="Star icon"
+/> <img
+src="./img/star.png"
+class="star-icon"
+alt="Star icon"
+/> <img
+src="./img/star.png"
+class="star-icon"
+alt="Star icon"
+/> <img
+src="./img/star.png"
+class="star-icon"
+alt="Star icon"
+/> <img
+src="./img/star.png"
+class="star-icon"
+alt="Star icon"
+/>`,
+];
+
+//Render reviews
+
+const reviewList = document.querySelector(".review-scroll-box");
+const renderReviews = async () => {
+  const fetcher = await fetch(
+    `https://cleopat-ac91a-default-rtdb.europe-west1.firebasedatabase.app/approved.json`
+  );
+  const data = await fetcher.json();
+  console.log(data);
+
+  for (const key1 in data) {
+    for (const key2 in data[key1]) {
+      const date = data[key1][key2].date;
+      const name = data[key1][key2].name;
+      const stars = data[key1][key2].stars;
+      const story = data[key1][key2].story;
+
+      // Append the values to the HTML string
+      reviewList.innerHTML += `<div class="review">
+         <div class="rating-box">
+           <p class="rating-txt">Rating:</p>
+           <div class="star-box">
+      ${starsArray[stars - 1]}
+           </div>
+         </div>
+         <div class="review-name-date">
+           <span class="reviewer-name">${name}</span>
+           <span class="reviewer-date">At ${date}</span>
+         </div>
+         <div class="reviewer-copy">
+           <p class="review-copy">
+      ${story}
+           </p>
+         </div>
+       </div>`;
+    }
+  }
+};
+renderReviews();

@@ -1,6 +1,7 @@
 @media (max-width: 1000px) {
   .main-content {
     flex-direction: column-reverse;
+    padding: 0;
   }
   .tour-img {
     /* padding-left: 2rem; */
@@ -18,6 +19,8 @@
   .tours-box {
     position: relative;
     width: 100%;
+    left: 0%;
+
     max-height: initial;
     /* border: 1px solid beige; */
   }
@@ -44,10 +47,14 @@
   .tours-inner {
     box-shadow: none;
     width: 100%;
+    left: 0;
+    padding: 0;
   }
 
   .tours-scroll-box {
     padding: 0rem;
+    margin: 0rem 1rem;
+    width: auto;
   }
 
   .tour-text-cont {
