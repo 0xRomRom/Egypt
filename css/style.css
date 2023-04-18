@@ -135,6 +135,7 @@ video {
   padding: 0rem 1rem 0rem 0.5rem;
   display: flex;
   color: white;
+  background: linear-gradient(120deg, rgb(60, 110, 175), rgb(139, 21, 139));
 }
 
 .review-bar {
@@ -151,9 +152,10 @@ video {
   height: 98%;
   top: 1%;
   /* box-shadow: 0px 0px 5px rgb(255, 255, 255); */
-  border: 2px solid black;
+  /* border: 2px solid black; */
   border-radius: 0.5rem;
   overflow: hidden;
+  background-color: transparent;
 }
 
 .tours-box {
@@ -169,9 +171,22 @@ video {
   left: 1%;
   height: 98%;
   top: 1%;
-  border: 2px solid black;
+  border: 2px solid rgb(186, 78, 78);
+  border: 3px solid rgb(244, 244, 188);
   border-radius: 0.5rem;
   overflow-y: scroll;
+  background-color: white;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.large-img {
+  max-width: 100%;
+  height: auto;
 }
 
 .review-hero {
@@ -198,7 +213,7 @@ video {
   overflow-y: scroll;
   overflow-x: hidden;
   display: flex;
-  justify-content: ce;
+  justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
 }
@@ -214,6 +229,7 @@ video {
   margin-bottom: 1rem;
   padding-left: 0.2rem;
   padding-right: 0.2rem;
+  background-color: white;
 }
 
 .rating-box {
@@ -294,18 +310,18 @@ video {
   position: relative;
   padding: 0rem 1rem;
   width: 100%;
-  /* border: 1px solid red; */
+  /* border: 1px solid rgb(186, 78, 78); */
 }
 
 .grad1 {
-  background: linear-gradient(120deg, blue, purple);
+  /* background: linear-gradient(120deg, blue, purple); */
 }
 
 .grad2 {
-  background: linear-gradient(120deg, rgb(60, 110, 175), rgb(139, 21, 139));
+  /* background: linear-gradient(120deg, rgb(60, 110, 175), rgb(139, 21, 139)); */
 }
 .grad3 {
-  background: linear-gradient(120deg, rgb(95, 145, 80), rgb(16, 71, 153));
+  /* background: linear-gradient(120deg, rgb(95, 145, 80), rgb(16, 71, 153)); */
 }
 
 .tour-item {
@@ -315,6 +331,9 @@ video {
   margin-bottom: 2rem;
   border-radius: 0.7rem;
   display: flex;
+  border: 1px solid black;
+  background-color: white;
+  border: 2px solid rgb(186, 78, 78);
 }
 
 .tour-img-cont {
@@ -361,7 +380,7 @@ video {
 
 .tours-description {
   position: relative;
-  color: white !important;
+  color: black !important;
   max-width: 40rem;
   /* background-color: green; */
   letter-spacing: 2px;
@@ -382,8 +401,8 @@ u {
   margin-bottom: 2rem;
   border-radius: 1rem;
   background-color: transparent;
-  border: 2px solid black;
-  color: white !important;
+  border: 2px solid rgb(186, 78, 78);
+  color: black !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -392,7 +411,8 @@ u {
   transition: all 0.3s ease-in-out;
 }
 .contact-us:hover {
-  background-color: black;
+  background-color: rgb(186, 78, 78);
+  color: white !important;
 }
 
 .contact-us:hover .fa-arrow-right {
@@ -411,7 +431,7 @@ u {
   border-radius: 0.3rem;
   background-color: white;
   color: black !important;
-  border: 2px solid black;
+  border: 2px solid rgb(186, 78, 78);
   font-family: "Montserrat";
   font-weight: 800;
   cursor: pointer;
@@ -420,13 +440,14 @@ u {
 
 .plaats-review-cta:hover {
   color: white !important;
-  background-color: black;
+  background-color: rgb(186, 78, 78);
 }
 
 .footer {
   position: relative;
   width: 100vw;
   height: 30rem;
+  background-color: rgb(244, 244, 188);
 }
 
 .footer-brand-box {
