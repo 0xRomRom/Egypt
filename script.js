@@ -295,3 +295,12 @@ const renderReviews = async () => {
   }
 };
 renderReviews();
+
+//Send whatsapp
+function sendWhatsAppMessage() {
+  var phoneNumber = "00201128647944"; // Change this to the desired phone number
+  var message = "I'd like to book please";
+  var url =
+    "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+  window.open(url);
+}

@@ -9,8 +9,7 @@
 
   .review-bar {
     position: relative;
-    min-width: 95vw;
-    max-width: 95vw;
+    min-width: 100%;
     margin: 0;
     height: 70rem;
     overflow: hidden;
@@ -27,8 +26,7 @@
 
   .review-scroll-box {
     position: relative;
-    width: 101.5%;
-    left: 0%;
+    width: 100%;
     margin-top: 0.75rem;
     height: 60rem;
     /* border: 1px solid red; */
@@ -38,6 +36,9 @@
 
   .review-inner {
     box-shadow: none;
+    width: 95%;
+    left: 2%;
+    margin: 0;
   }
 
   .tours-hero {
