@@ -131,7 +131,7 @@ video {
 
 .main-content {
   position: relative;
-  width: 100%;
+  width: 100vw;
   padding: 0rem 1rem 0rem 0.5rem;
   display: flex;
   color: white;
@@ -172,7 +172,6 @@ video {
   height: 98%;
   top: 1%;
   border: 2px solid rgb(186, 78, 78);
-  border: 3px solid rgb(244, 244, 188);
   border-radius: 0.5rem;
   overflow-y: scroll;
   background-color: white;
@@ -334,6 +333,7 @@ video {
   border: 1px solid black;
   background-color: white;
   border: 2px solid rgb(186, 78, 78);
+  border: 3px solid rgb(244, 244, 188);
 }
 
 .tour-img-cont {
@@ -400,7 +400,7 @@ u {
   margin-right: 1rem;
   margin-bottom: 2rem;
   border-radius: 1rem;
-  background-color: transparent;
+  background-color:rgb(186, 78, 78);
   border: 2px solid rgb(186, 78, 78);
   color: black !important;
   display: flex;
